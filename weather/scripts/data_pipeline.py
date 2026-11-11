@@ -114,3 +114,4 @@ if __name__ == "__main__":
    conn = connect_to_database()
    create_schema_and_table(conn)
    insert_weather_data(conn, city, weather_data)
+   conn.close()
