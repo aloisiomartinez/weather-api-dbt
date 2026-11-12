@@ -1,0 +1,34 @@
+version: 2
+
+sources:
+  - name: weather_data
+    database: postgres
+    schema: weather_data
+    tables:
+     - name: city_weather
+       description: Table weather_data
+       columns:
+       - name: id
+         description: "Unique Identifier"
+         tests: 
+          - not_null
+          - unique
+       - name: city
+         description: "Name of the city"
+         tests: 
+          - not_null
+       - name: temperature
+         description: "Current temperature in the city"
+         tests: 
+          - not_null
+       - name: weather_description
+         description: "Description of the current weather"
+       - name: time
+         description: "Timestamp of the weather data"
+         tests: 
+          - not_null
+       - name: inserted_at
+         description: "Timestamp when the data was inserted into the database"
+       - name: timezone
+         description: "Timezone of the city"
+       
