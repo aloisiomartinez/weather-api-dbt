@@ -115,9 +115,4 @@ weather:
 - Macros Jinja e sobrescrita de `generate_schema_name`
 - Testes genéricos do dbt
 
-## 🔮 Próximos passos
 
-- Coletar dados de várias cidades
-- Agendar a execução (cron / Airflow / Dagster)
-- Adicionar documentação e testes para staging e marts
-- Subir o ambiente com Docker Compose
