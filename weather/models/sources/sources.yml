@@ -27,7 +27,7 @@ sources:
          description: "Timestamp of the weather data"
          tests: 
           - not_null
-       - name: inserted_at
+       - name: insert_at
          description: "Timestamp when the data was inserted into the database"
        - name: timezone
          description: "Timezone of the city"
