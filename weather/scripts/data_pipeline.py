@@ -68,7 +68,7 @@ def create_schema_and_table(conn: psycopg2.connect):
             wind_speed FLOAT,
             time TIMESTAMP,
             insert_at TIMESTAMP DEFAULT NOW(),
-            timezone TEXT
+            timezone INTEGER
         );
       """)
       conn.commit()
